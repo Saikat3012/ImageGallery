@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 const AppStack = () => {
     return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="Gallery">
         <Stack.Screen options={{headerShown: false}} name="Gallery" component={Gallery} />
         <Stack.Screen options={{headerShown: false}} name="Home" component={Home} />
       </Stack.Navigator>
